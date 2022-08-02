@@ -9,4 +9,3 @@ express()
   .use('/joke',jokeRoute)
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
-module.exports = app;
