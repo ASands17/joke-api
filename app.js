@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 5000
 const jokeRoute = require('./routes/jokes')
 
 express()
-  .use(jokeRoute)
+  .use('/joke',jokeRoute)
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 module.exports = app;
